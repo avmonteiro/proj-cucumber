@@ -1,0 +1,3 @@
+[tentativa de funcionar] - 
+para executar esteja antes da pasta feature, EX:
+proj-cucumber#> cucumber -r feature/support -r feature/spefication
