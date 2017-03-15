@@ -2,6 +2,9 @@
 #! ~/.rvm/gems/ruby-2.3.3/bin ruby
 
 Given(/^usuário e senha realizar login$/) do
+ # @home = Home.new
+ #@home.load
+  #@home.fazerlogin(new) #user pass
   pending # Write code here that turns the phrase above into concrete actions
 end
 

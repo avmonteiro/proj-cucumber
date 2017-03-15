@@ -3,15 +3,18 @@
 #! ~/.rvm/gems/ruby-2.3.3/bin ruby
 
 Given(/^que eu acesse a url da Inmetrics$/) do
-   puts @quemsomos = Home.new
+   @home = Home.new
+   @home.load
 end
 
 When(/^eu clicar em Quem somos$/) do
-  @quemsomos.link_quemsomos.click
+  #@home.link_quem_somos.click
+  action_menu = @home.link_quem_somos
+  action_menu.click
 end
 
 Then(/^deverá exibir o texto$/) do
-	expect(@quemsomos).to have_content('mais de 15 anos de atuação')
+	expect(page).to have_content('MAIS DE 15 ANOS') 
 end
 
 
