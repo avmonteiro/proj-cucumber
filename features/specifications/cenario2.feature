@@ -2,10 +2,14 @@
 Feature: Adicionar Disciplinary Case
 
 
-  Scenario: Usuário adiciona um Disciplinary Case
-    Given que o usuário realiza login inserindo usuário e senha 
-    When quado usuário clicar menu Discipline
-    And clicar no botão para adicionar Disciplinary
-    And preencher os campos e salvar  
-    Then deverá exibir o cadastro concluído.
+ 	Scenario: Cadastrar Disciplinary Case com sucesso 
+ 		Given a URL de login Entrerprise
+    Given efetuar login com "<username>" e "<password>" 
+    When usuário clicar no link Discipline do menu
+    And clicar no botão ADD para adicionar uma nota
+    And preencher os campos "<employee name>", "<case name>", "<description>"
+    And clicar no botão salvar
+    Then deverá exibir o cadastro de nota concluído.
 
+
+     
