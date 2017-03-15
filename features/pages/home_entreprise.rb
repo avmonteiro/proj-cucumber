@@ -1,12 +1,14 @@
 
-class Home < SitePrism::Page
+class HomeEnterprise < SitePrism::Page
 
 	set_url "https://enterprise-demo.orangehrmlive.com"
 
-	#element :user, "//li[@id='menu-item-2960']/a/span/span"
-	#element :pass, "//li[@id='menu-item-2960']/a/span/span"
-	#element :btnlogin, "//li[@id='menu-item-2960']/a/span/span"
+	#login
+	element :user, "input[name='txtUsername']"
+	element :user, "input[name='txtPassword']"	
+	element :btnlogin, "#divLoginButton"
 
+	
 	#def login(username, password)
 		#user = username
 		#pass = password
@@ -17,6 +19,8 @@ class Home < SitePrism::Page
 	#	btnlogin.click
 	#	return Dashbord.new
 	#end	
+
+	
 
 	
 end
