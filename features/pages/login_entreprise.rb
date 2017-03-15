@@ -15,13 +15,5 @@ class LoginEnterprise < SitePrism::Page
 	  btnlogin.click
 	  return DisciplineEnterprise.new
   end
-  
+
 end
-
-	
-
-	
-
-
-
-

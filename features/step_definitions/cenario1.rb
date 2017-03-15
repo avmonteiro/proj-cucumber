@@ -1,4 +1,3 @@
-
 #encoding: utf-8
 #! ~/.rvm/gems/ruby-2.3.3/bin ruby
 
